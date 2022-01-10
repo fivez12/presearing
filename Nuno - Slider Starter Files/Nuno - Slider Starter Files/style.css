@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+#logo {
+  height: 2.6rem;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+  color: #505962;
+  overflow-y: scroll;
+}
+
+.offset:before {
+  height: 3.9rem;
+  margin-top: -3.9rem;
+  content: "";
+  display: block;
+}
+/*  Navbar style */
+
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+.navbar-nav li {
+  padding-right: 0.7rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-top: 0.8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ee9c3b;
+}
+
+/* Slider */
+.carousel-item {
+  height: 100vh;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 38%;
+  text-transform: uppercase;
+  width: 80%;
+  right: 0;
+  left: 70;
+}
+
+.carousel-caption h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+  padding-bottom: 1rem;
+}
+
+.carousel-caption {
+  color: black;
+}
+
+.btn-outline-dark {
+  color: black;
+  border-color: black;
+}
+
+.btn-outline-dark:hover {
+  color: gray;
+  background-color: transparent;
+  border-color: gray;
+}
+
+.btn-outline-dark:active:focus {
+  background-color: transparent !important;
+  color: rgb(44, 43, 43) !important;
+  border-color: rgb(44, 43, 43) !important;
+}
+.btn {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn-lg {
+  border-width: medium;
+  border-radius: 0;
+  font-size: 1.1rem;
+}
+
+.jumbotron {
+  border-radius: 0;
+  padding: 1rem 0 1rem;
+  margin-bottom: 0;
+}
+
+h3.heading {
+  font-size: 1.9rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-bottom: 1.9rem;
+}
+.heading-underline {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: #ee9c3b;
+  margin: 0 auto 2rem;
+}
+
+/*prtfolio*/
+.portfolio img {
+  transition: transform 0.5s ease;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.row.no-padding [class*="col-"] {
+  padding: 0;
+}
+.portfolio img:hover {
+  transform: scale(1.1);
+  cursor: zoom-in;
+}
+.portfolio {
+  overflow: hidden;
+}
+/* Contact */
+footer {
+  background-color: #000000;
+  color: white;
+  padding: 1rem 0 1rem;
+  margin-top: 1rem;
+}
+footer img {
+  height: 3rem;
+}
+hr.socket {
+  border-top: 0.2rem solid #666b71;
+  width: 100%;
+}
+
+/*============= COURSE SECTION =============*/
+
+.narrow {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.btn-md {
+  border-width: medium;
+  border-radius: 0;
+  padding: 0.6rem 1.1rem;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+.btn-secondary {
+  border-width: medium;
+  border-radius: 0;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 1rem;
+  border-color: #1ebba3;
+  background-color: #1ebba3;
+  color: white;
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+  border-color: #189582;
+  background-color: #189582;
+  color: white;
+}
+/*--- Media Queries --*/
+@media (max-width: 767px) {
+  .carousel-caption h1 {
+    font-size: 2.3rem;
+    letter-spacing: 0.15rem;
+
+    padding-bottom: 5rem;
+  }
+  .btn-lg {
+    font-size: 0.9rem;
+  }
+}
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1100% and up)
+@media (min-width: 1100%) { ... }
+
+=============*/
