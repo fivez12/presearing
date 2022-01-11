@@ -40,6 +40,10 @@ body {
 
 /* Slider */
 
+.carousel a {
+  position: absolute;
+  z-index: 15;
+}
 .carousel-item {
   height: 100vh;
 }
