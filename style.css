@@ -70,6 +70,9 @@ body {
 }
 
 .btn-outline-dark {
+  position: absolute;
+  top: 30%;
+  left: 48%;
   color: black;
   border-color: black;
 }
